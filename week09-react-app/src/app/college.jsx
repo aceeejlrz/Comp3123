@@ -1,7 +1,12 @@
-export default function College({ name, city }) {
-  return (
-    <h5 className="text-base font-bold">
-      {name}, {city}
-    </h5>
-  );
+import React from "react";
+
+export default function College({collegeDetails}) {
+    return (
+        <div>
+            <h1>College Component</h1>
+            <h2>Name: {collegeDetails.name}</h2>
+            <h2>Location: {collegeDetails.location}</h2>
+            <h2>Established: {collegeDetails.established}</h2>
+        </div>
+    )
 }
